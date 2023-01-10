@@ -1,1 +1,134 @@
 @import url(../normalize.css);
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* ul li */
+
+ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* main styles */
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* left content styles */
+
+.left-content {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  overflow: auto;
+  border-right: 1px solid rgba(221, 221, 221, 0.38);
+}
+
+.resume-logo {
+  display: flex;
+  justify-content: end;
+}
+
+.resume-logo a {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  text-align: right;
+  font-size: 20px;
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFF;
+  background: #000;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: end;
+  margin: 30px 0;
+}
+
+.nav-item ul li, .nav-item ul li a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item ul li a {
+  padding: 6px 0;
+  text-align: right;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #C8C8C8;
+}
+
+.nav-item a:hover {
+  color: #000;
+}
+
+.nav-item a {
+  position: relative;
+}
+
+.nav-item a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 24px;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+}
+
+.nav-item a:hover:before {
+  width: 100%;
+}
+
+.nav-item a::before {
+  transition: width 0.35s;
+}
+
+.social {
+  display: flex;
+  justify-content: end;
+}
+
+.social-link_item {
+  width: 32px;
+  height: 32px;
+}
+
+.social-link_item:hover {
+  transform: scale(1.2);
+}
+
+.contact {
+  text-align: end;
+}
+
+.contact-link {
+  margin: 10px 0;
+}
+
+.contact-link_item {
+  text-decoration: none;
+  color: #C8C8C8;
+}
+
+.contact-link_item:hover {
+  color: #000;
+}
+
+/* right content styles */
