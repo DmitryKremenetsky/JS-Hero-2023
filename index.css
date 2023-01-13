@@ -187,6 +187,7 @@ ul > li {
 
 .information-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .resume-photo {
@@ -281,14 +282,15 @@ ul > li {
 .education-wrapper {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   gap: 10px;
 }
 
 .education-card {
   width: 44vh;
-  padding: 16rem 0 0;
+  max-height: 300px;
+  padding: 10rem 0 0;
   color: #000;
   border-radius: 0.4rem;
   transition: transform 500ms ease;
@@ -407,13 +409,33 @@ ul > li {
 /* interests */
 
 .interests {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .interests-wrapper {
-
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 .interests-item {
+  min-width: 250px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
 
+.interests-item:hover {
+  transform: scale(1);
+  box-shadow: 0 15px 60px rgb(0 0 0 / 12%);
+}
+
+.interests-icons {
+  width: 80px;
+  height: 80px;
 }
