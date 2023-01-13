@@ -293,6 +293,7 @@ ul > li {
   border-radius: 0.4rem;
   transition: transform 500ms ease;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .mkp-college {
@@ -315,7 +316,7 @@ ul > li {
   padding: 1.5rem;
   background: rgba(0, 0, 0, 0.6);
   color: #FFF;
-  transform: translateY(50%);
+  transform: translateY(60%);
   transition: transform 500ms ease;
 }
 
@@ -338,4 +339,81 @@ ul > li {
 .card-button:focus {
   background-color: #FFF;
   color: #000;
+}
+
+.card-title {
+  margin: 0 0 60px;
+}
+
+.card-body {
+  margin: 0 0 20px;
+}
+
+/* skills */
+
+.skills {
+  margin-bottom: 100px;
+}
+
+.skills-wrapper {
+  width: 100%;
+}
+
+.skills-name {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skills-bar {
+  height: 14px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.25rem;
+}
+
+.skills-line.active {
+  height: 14px;
+  border-radius: 0.25rem;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  position: relative;
+  animation: fillBar 2.5s;
+}
+
+
+.skills-line::before {
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  color: #FFF;
+  background: #000;
+  border-radius: 0.25rem;
+  font-size: 10px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* interests */
+
+.interests {
+  margin-bottom: 100px;
+}
+
+.interests-wrapper {
+
+}
+
+.interests-item {
+
 }
