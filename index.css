@@ -1,4 +1,4 @@
-@import url(./normalize.css);
+@import url(../normalize.css);
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html {
@@ -42,7 +42,7 @@ ul > li {
 /* left content styles */
 
 .left-content {
-  width: 40%;
+  width: 20%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -273,10 +273,9 @@ ul > li {
 }
 
 .about-me_greeting {
-  max-width: 90%;
+  max-width: 78%;
   text-align: center;
 }
-
 
 /* education */
 
@@ -286,15 +285,15 @@ ul > li {
 
 .education-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
 
 .education-card {
-  width: 44vh;
-  max-height: 300px;
+  width: 48vh;
+  height: 220px;
   padding: 10rem 0 0;
   color: #000;
   border-radius: 0.4rem;
@@ -320,7 +319,8 @@ ul > li {
 }
 
 .card-content {
-  padding: 1.5rem;
+  text-align: center;
+  padding: 24px;
   background: rgba(0, 0, 0, 0.6);
   color: #FFF;
   transform: translateY(60%);
@@ -450,6 +450,10 @@ ul > li {
 @media (max-width: 821px) {
   .education-wrapper {
     justify-content: center;
+  }
+
+  .about-me_greeting {
+    width: 100%;
   }
 }
 

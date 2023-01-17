@@ -8,15 +8,15 @@ const overlay = document.querySelector('.overlay');
 const navLinks = document.querySelectorAll('.nav-links');
 
 function showItem() {
-  skillsLine.forEach(skillsLines => {
+  skillsLine.forEach((skillsLines) => {
     skillsLines.classList.add('active');
-  })
+  });
 }
 
 function hideItem() {
-  skillsLine.forEach(s => {
-    s.classList.remove('active')
-  })
+  skillsLine.forEach((s) => {
+    s.classList.remove('active');
+  });
 }
 
 rightContent.addEventListener('scroll', () => {
@@ -28,39 +28,39 @@ rightContent.addEventListener('scroll', () => {
   } else {
     hideItem();
   }
-})
+});
 
 burgerBtn.addEventListener('click', () => {
   burgerBtn.classList.toggle('active');
   menuBody.classList.toggle('active');
   overlay.classList.toggle('active');
-})
+});
 
 overlay.addEventListener('click', () => {
   burgerBtn.classList.toggle('active');
   menuBody.classList.toggle('active');
   overlay.classList.toggle('active');
-})
+});
 
 const cardHover = document.querySelectorAll('.education-card');
 
 let hover = (e) => {
   e.target.classList.add('hover');
-}
+};
 
 let end = (e) => {
   e.target.classList.remove('hover');
-}
+};
 
-cardHover.forEach(card => {
-  card.addEventListener('touchmove', hover)
-  card.addEventListener('touchend', end)
-})
+cardHover.forEach((card) => {
+  card.addEventListener('touchmove', hover);
+  card.addEventListener('touchend', end);
+});
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     burgerBtn.classList.toggle('active');
     menuBody.classList.toggle('active');
     overlay.classList.toggle('active');
-  })
-})
+  });
+});
