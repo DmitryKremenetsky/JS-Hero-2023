@@ -320,7 +320,7 @@ ul > li {
 
 .card-content {
   text-align: center;
-  padding: 24px;
+  padding: 2.5rem;
   background: rgba(0, 0, 0, 0.6);
   color: #FFF;
   transform: translateY(60%);
