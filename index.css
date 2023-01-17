@@ -13,16 +13,11 @@ body {
   background: #FAFAFA;
 }
 
-/* ul li */
-
 ul > li {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-
-/* main styles */
 
 .wrapper {
   width: 100%;
@@ -38,8 +33,6 @@ ul > li {
 .menu-body {
   display: none;
 }
-
-/* left content styles */
 
 .left-content {
   width: 20%;
@@ -156,8 +149,6 @@ ul > li {
   color: #000;
 }
 
-/* right content styles */
-
 .right-content {
   height: 100%;
   overflow-y: auto;
@@ -260,8 +251,6 @@ ul > li {
   display: flex;
 }
 
-/* about me */
-
 .about-me {
   margin-bottom: 100px;
 }
@@ -276,8 +265,6 @@ ul > li {
   max-width: 78%;
   text-align: center;
 }
-
-/* education */
 
 .education {
   margin-bottom: 100px;
@@ -355,8 +342,6 @@ ul > li {
   margin: 0 0 20px;
 }
 
-/* skills */
-
 .skills {
   margin-bottom: 100px;
 }
@@ -410,8 +395,6 @@ ul > li {
   }
 }
 
-/* interests */
-
 .interests {
   margin-bottom: 20px;
 }
@@ -443,8 +426,6 @@ ul > li {
   width: 80px;
   height: 80px;
 }
-
-/* adaptive burger menu view */
 
 @media (max-width: 821px) {
   .education-wrapper {
