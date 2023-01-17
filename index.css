@@ -433,7 +433,7 @@ ul > li {
   }
 
   .about-me_greeting {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
