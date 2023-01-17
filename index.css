@@ -319,7 +319,7 @@ ul > li {
 }
 
 .card-content {
-  padding: 2.5rem;
+  padding: 1.5rem;
   background: rgba(0, 0, 0, 0.6);
   color: #FFF;
   transform: translateY(60%);
@@ -348,7 +348,7 @@ ul > li {
 }
 
 .card-title {
-  margin: 0 0 60px;
+  margin: 0 0 80px;
 }
 
 .card-body {
